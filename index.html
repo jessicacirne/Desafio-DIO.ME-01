@@ -1,0 +1,144 @@
+<html>
+    <head>
+        <title>Curso DIO.me - HTML</title>
+    </head>
+
+    <body>
+        <h1 a id="inicio"><strong>Introdução ao HTML na prática</strong></h1>
+        <hr/>
+
+        <h2> Indice </h2>
+
+        <ul>
+            <li>
+                 <a href="#Estrutura-básica">Estrutura básica do HTLM</a>
+            </li>
+
+            <li>
+                <a href="#Falando-sobre-tags">Falando sobre tags</a>
+            </li>
+
+            <li>
+                <a href="#Textos">Textos</a>
+            </li>
+
+            <li>
+                <a href="#listas">Listas Ordenadas e Não Ordenadas</a>
+            </li>
+
+            <li>
+                <a href="#links">Links</a>
+            </li>
+
+            <li>
+                <a href="#conteudo-complementar">Conteúdo complementar</a>
+            </li>
+        </ul>
+
+        <h3 id="Estrutura-básica"><i>Estrutura básica do HTML</i></h3> 
+        <small><a href="#inicio">(Voltar)</a></small>
+
+        <p>O documento HTML sempre inicia com o que chamamos de estrutura básica. Esta estrutura é quase que imutável. Sempre será dessa forma e você sempre, sempre começará seu HTML começando por esse código. Geralmente os editores como o Sublime Text já tem atalhos para iniciar os documentos HTMLs com essa estrutura, logo, você não precisa se preocupar em decorá-la, mas é bom que faça. </p>
+        <p>É possível compreender o documento em HTML de uma maneira muito simples, através de uma divisão de blocos das tags essenciais, conforme a a seguinte estrutura:</p>
+
+        <ul>
+            <li>
+                    <mark>Definição do documento (doctype)</mark>                    
+            </li>
+            <li>
+                    <mark>Cabeça (head)</mark>
+            </li>
+            <li>
+                    <mark>Corpo (body)</mark> 
+            </li>
+        </ul>
+        <img src="data:image/png;base64,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" />
+
+        <h4><u>Head</u></h4>
+        <p> Contém informações que não são transpostas visivelmente para o usuário/leitor do documento. São dados implícitos, de uso e controle do documento: vinculação com outros arquivos, aplicação de lógica de programação de scripts e metadados. Na prática, todo o conteúdo do cabeçalho fica delimitado entre a abertura e fechamento tag <strong><i>head</i></strong> </p>
+
+        <h4><u>Body</u></h4>
+        <p>Trata-se do documento em si, ou seja, a informação legível para o usuário/leitor do documento. É todo e qualquer texto que se deseja apresentar, assim como toda e qualquer forma de mídia de saída (imagens, sons, miniaplicativos embutidos, conteúdo multimídia, etc). Além disso, toda a apresentação de entrada de dados (formulários) também se aplica neste seção do documento. Na prática, o corpo do documento é delimitado pelo par de tags <body> e </body>.
+
+        Este é o preceito básico que deve estar muito bem claro para você: onde as marcações se aplicam, e quais são os resultados deste modelo. Por exemplo: se vocês deseja informar conteúdo textual para saída legível ao usuário do seu sistema web, esta marcação deverá obrigatoriamente estar no bloco do corpo da página. Ainda: para definir qual o tipo de codificação da página (uma meta informação do documento), esta deve obrigatoriamente estar marcada no cabeçalho do mesmo documento.
+                
+        Dentro do elemento <strong><i>body</i></strong> sua estrutura de página terá os elementos semânticos da construção da sua página, onde serão declarados e identificados cabeçalhos, rodapé, conteúdo principal, etc.</p>
+        
+        <h3 id="Falando-sobre-tags"><i>Falando sobre tags</i></h3>
+        <small><a href="#inicio">(Voltar)</a></small>
+        <p>As tags são formadas por uma estrutura própria, iniciam com o sinal “menor que”, em seguida vem o nome daquele elemento e por fim, o sinal “maior que”. Podem ser dispostas em tags que precisam de fechamento e tags que fecham sozinhas (self-closing). O fechamento de uma tag será definido com uma barra (/), sendo que no caso das tags de auto fechamento, não há necessidade da presença desse caractere.</p>
+
+        <img src="https://www.alura.com.br/artigos/assets/o-que-e-html-suas-tags-parte-1-estrutura-basica/imagem1.png"/>
+
+        <p>As tags podem ser categorizadas inicialmente em dois tipos, em “nível de bloco” (block-level) e “em linha” (inline). Um elemento em nível de bloco ocupa toda a largura de seu elemento pai, que também chamamos de elemento container, criando assim um “bloco”. Já os elementos inline, geralmente usamos para demarcação de conteúdos de texto.</p>
+
+        <h3 id="Textos"><i>Textos</i></h3>
+        <small><a href="#inicio">(Voltar)</a></small>
+        <p>Um dos principais objetivos do HTML é dar estrutura de texto e significado, também conhecido como semântica, para que um navegador possa exibi-lo corretamente.</p>
+        <p>O conteúdo estruturado torna a experiência de leitura mais fácil e mais agradável.</p>
+        <p>Em HTML, cada parágrafo deve ser envolvido em um elemento p, assim:</p>
+
+        <img src="imagens/Capturar.JPG"/>
+
+        <p>Cada título deve ser envolvido em um elemento de título:</p>
+
+        <img src="imagens/Capturar 01.JPG"/>
+
+        <p>Existem seis elementos de título — < h1 >, < h2 >, < h3 >, < h4 >, < h5 > e < h6 >. Cada elemento representa um nível diferente de conteúdo no documento; < h1 > representa o título principal, < h2 > representa subtítulos, < h3 > representa sub-subtítulos, e assim por diante.</p>
+
+        <h3 id="listas"><i>Listas Ordenadas e Não Ordenadas</i></h3>
+        <small><a href="#inicio">(Voltar)</a></small>
+
+        <ul>
+            <li>As listas são muito importantes quando queremos listar alguns itens no site e também para a criação de menu de navegação.</li>
+            <li>As listas ordenadas, como o próprio nome já diz, os itens serão listados de forma ordenada, seja por número, letra, ou algarismos romanos.</p>
+         </ul>
+                
+        <h4><u>Listas ordenadas</u></h4>
+        <p>Uma lista ordenada começa com a tag < ol > e seus respectivos itens da lista ficam dentro da tag < li >. Por padrão as listas ordenadas são ordenadas por números, mas também podemos ordena-las por outros métodos.</p>
+
+        <blockquote>Vamos ao código:</blockquote> 
+        <img src="imagens/Capturar 02.JPG"/>
+
+        <blockquote>Aparecerá assim no site:</blockquote> 
+
+        <ol>
+            <li>Nome</li>
+            <li>Telefone</li>
+            <li>Endereço</li>
+            <li>País</li>
+        </ol>
+
+        <h4><u>Listas desordenadas</u></h4>
+        <p>Já as Listas desordenadas são iniciadas com a tag <ul> e são representadas por pequenos “bullets”</p>
+
+        <blockquote>Vamos ao código:</blockquote> 
+
+        <img src="Imagens/Capturar 03.JPG" />
+
+        <blockquote>Aparecerá assim no site:</blockquote> 
+
+         <ul>
+            <li>Nome</li>
+            <li>Telefone</li>
+            <li>Endereço</li>
+            <li>País</li>
+        </ul>
+
+        <h3 id="links"><i>Links</i></h3>
+        <small><a href="#inicio">(Voltar)</a></small>
+        <p>O elemento HTML <strong><i>link</i></strong> faz parte do conjunto de tags que formam os metadados do cabeçalho do documento HTML e é utilizado para acessar recursos externos da página. Na prática, a tag < link > diz ao navegador que existem recursos externos vinculados à página que podem ser utilizados no código fonte, como os estilos CSS.</p>
+        <p>É importante não confundir o elemento < link > com o elemento < a >, que é utilizado para adicionar hiperlinks na página. Enquanto o primeiro é utilizado para vincular conteúdo ao código fonte, a tag HTML < a > direciona a pessoa usuária da aplicação para outra página ou para outra área dentro do mesmo conteúdo.</p>
+
+        <h3 id="conteudo-complementar"> Conteúdo complementar</h3> 
+          <ul>
+            <li>
+                <a href="https://www.youtube.com/watch?v=4Gq3WW6FwVA" target="_blank" title="Confira esse conteúdo">Tutorial básico do HTML e CSS</a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/watch?v=SV7TL0hxmIQ" target="_blank" title="Confira esse conteúdo">Curso de HTML para iniciantes</a>
+            </li>                      
+          </ul>  
+        
+    </body>
+</html>
